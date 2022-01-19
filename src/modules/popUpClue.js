@@ -4,6 +4,7 @@ const clue = () => {
     const addClue = (elem) => {
         let item = elem.closest('.formula-item');
         item.querySelector('.formula-item-popup').classList.add('formula-item-active');
+        item.querySelector('.formula-item-popup').classList.add('formula-item-trans');
     };
     const removeClue = (elem) => {
         let item = elem.closest('.formula-item');

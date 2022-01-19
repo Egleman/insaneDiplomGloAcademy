@@ -1359,6 +1359,12 @@ template,
   visibility: visible;
   opacity: 1;
 }
+.formula-item-trans {
+  transform: rotate(180deg);
+}
+.formula-item-trans div {
+  transform: rotate(180deg);
+}
 
 .formula-item-popup p {
   padding-bottom: 15px;
