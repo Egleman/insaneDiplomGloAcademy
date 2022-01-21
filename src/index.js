@@ -4,12 +4,14 @@ import maskInput from './modules/maskInput';
 import linkPrivacy from './modules/linkPrivacy';
 import clue from './modules/popUpClue';
 import sendForm from './modules/sendForm';
+import sliderClue from './modules/sliderClue';
 
 displayNumber();
 menu();
 maskInput();
 linkPrivacy();
 clue();
+sliderClue();
 sendForm({
     formID: 'feedback1',
 });
