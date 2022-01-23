@@ -3,7 +3,7 @@ const repairTabs = () => {
     const tabs = document.querySelectorAll('.repair-types-nav__item');
 
     //const tabPanel = document.querySelector('.service-header');
-    const tabContent = document.querySelectorAll('.service-tab');
+    const tabContent = document.querySelectorAll('.types-repair-slider-swiper');
     //const tabs = document.querySelectorAll('.service-header-tab');
 
     tabPanel.addEventListener('click', (e) => {
@@ -12,10 +12,10 @@ const repairTabs = () => {
             tabs.forEach((tab, index) => {
                 if (tab === tabBtn) {
                     tab.classList.add('active');
-                    //tabContent[index].classList.remove('d-none');
+                    tabContent[index].style.display = 'flex';
                 } else {
                     tab.classList.remove('active');
-                    //tabContent[index].classList.add('d-none');
+                    tabContent[index].style.display = 'none';
                 }
             });
         }

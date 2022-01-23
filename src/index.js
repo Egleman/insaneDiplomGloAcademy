@@ -6,6 +6,7 @@ import clue from './modules/popUpClue';
 import sendForm from './modules/sendForm';
 import sliderClue from './modules/sliderClue';
 import repairTabs from './modules/repairTabs';
+import repairSlider from './modules/repairSlide';
 
 displayNumber();
 menu();
@@ -14,6 +15,7 @@ linkPrivacy();
 clue();
 sliderClue();
 repairTabs();
+repairSlider();
 sendForm({
     formID: 'feedback1',
 });
