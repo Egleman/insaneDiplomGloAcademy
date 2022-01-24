@@ -10,10 +10,6 @@ const menu = () => {
         popupDialogMenu.classList.toggle('active-menu');
     };
 
-    if (window.screen.width < 576) {
-        popupDialogMenu.style.width = window.screen.width + 'px';
-    }
-
     window.addEventListener('click', (e) => {
         if (e.target.closest('.menu__title') || e.target.closest('.menu__icon')) {
             handlemenu();

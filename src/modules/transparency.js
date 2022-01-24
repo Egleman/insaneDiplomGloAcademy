@@ -61,7 +61,7 @@ const transparency = () => {
             swiperTrans.enable();
             //swiperTrans.init();
         } else if (window.screen.width > 1025) {
-            swiperTabs.disable();
+            swiperTrans.disable();
         }
     });
 };

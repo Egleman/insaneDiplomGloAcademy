@@ -12,6 +12,8 @@ import mobilePortfolio from './modules/portfolioSliderMobile';
 import popUpPortfolio from './modules/popUpPortfolio';
 import transparency from './modules/transparency';
 import consult from './modules/consultation';
+import reviewSlider from './modules/reviewSlider';
+import accordion from './modules/accordion';
 
 displayNumber();
 menu();
@@ -26,6 +28,8 @@ mobilePortfolio();
 popUpPortfolio();
 transparency();
 consult();
+reviewSlider();
+accordion();
 sendForm({
     formID: 'feedback1',
 });
