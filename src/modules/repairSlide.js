@@ -19,7 +19,7 @@ const repairSlider = () => {
             renderFraction: function (currentClass, totalClass) {
                 return '<span class="' + currentClass + '"></span>' +
                     '<span class="' + totalClass + '"></span>';
-            } 
+            }
         },
     });
 
@@ -40,16 +40,10 @@ const repairSlider = () => {
     window.addEventListener('resize', () => {
         if(window.screen.width < 1025) {
             swiperTabs.init();
-        } else if (window.screen.width > 1025) {
-            swiperTabs.destroy();
-        }
+        }// else if (window.screen.width > 1025) {
+           // swiperTabs.destroy();
+        //}
     });
-
-    setTimeout(() => {
-        //swiperTabs.init();
-    }, 5000);
-
-
 };
 
 export default repairSlider;

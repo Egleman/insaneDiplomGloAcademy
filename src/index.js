@@ -7,6 +7,9 @@ import sendForm from './modules/sendForm';
 import sliderClue from './modules/sliderClue';
 import repairTabs from './modules/repairTabs';
 import repairSlider from './modules/repairSlide';
+import portfolioSlider from './modules/portfolioSlider';
+import mobilePortfolio from './modules/portfolioSliderMobile';
+import popUpPortfolio from './modules/popUpPortfolio';
 
 displayNumber();
 menu();
@@ -16,6 +19,9 @@ clue();
 sliderClue();
 repairTabs();
 repairSlider();
+portfolioSlider();
+mobilePortfolio();
+popUpPortfolio();
 sendForm({
     formID: 'feedback1',
 });
