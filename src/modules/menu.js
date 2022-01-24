@@ -3,6 +3,8 @@ const menu = () => {
     const popUp = document.querySelector('.popup-repair-types');
     const popUpPrivacy = document.querySelector('.popup-privacy');
     const modalPortfolio = document.querySelector('.popup-portfolio');
+    const modalTransparency = document.querySelector('.popup-transparency');
+    const popUpConsult = document.querySelector('.popup-consultation');
 
     const handlemenu = () => {
         popupDialogMenu.classList.toggle('active-menu');
@@ -40,6 +42,8 @@ const menu = () => {
             popUp.style.visibility = 'hidden';
             popUpPrivacy.style.visibility = 'hidden';
             modalPortfolio.style.visibility = 'hidden';
+            modalTransparency.style.visibility = 'hidden';
+            popUpConsult.style.visibility = 'hidden';
         } else if (e.target.closest('.close-btn-Fullprice-mobile')) {
             popUp.style.visibility = 'hidden';
         }

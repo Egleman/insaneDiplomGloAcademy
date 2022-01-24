@@ -10,6 +10,8 @@ import repairSlider from './modules/repairSlide';
 import portfolioSlider from './modules/portfolioSlider';
 import mobilePortfolio from './modules/portfolioSliderMobile';
 import popUpPortfolio from './modules/popUpPortfolio';
+import transparency from './modules/transparency';
+import consult from './modules/consultation';
 
 displayNumber();
 menu();
@@ -22,6 +24,8 @@ repairSlider();
 portfolioSlider();
 mobilePortfolio();
 popUpPortfolio();
+transparency();
+consult();
 sendForm({
     formID: 'feedback1',
 });

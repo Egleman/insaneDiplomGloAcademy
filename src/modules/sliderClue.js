@@ -7,10 +7,20 @@ const sliderClue = () => {
   
     // Navigation arrows
     centeredSlides: true,
-    spaceBetween: 30,
+    //spaceBetween: 30,
     //autoHeight: true,
-    slidesPerView: 3,
+    //slidesPerView: 3,
     loop: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        //spaceBetween: 5,
+      },
+      576: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      }
+    },
     navigation: {
       nextEl: '.slider-arrow_right-formula',
       prevEl: '.slider-arrow_left-formula',
