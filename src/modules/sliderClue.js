@@ -26,6 +26,20 @@ const sliderClue = () => {
       prevEl: '.slider-arrow_left-formula',
     },
   });
+  if(window.screen.width < 1024) {
+    setInterval(() => {
+      let formula = document.querySelector('.formula-slider');
+      let slides = formula.querySelectorAll('.swiper-slide');
+      slides.forEach(slide => {
+        if(slide.classList.contains('swiper-slide-active')) {
+          slide.querySelector('.formula-item').classList.add('active-item');
+        } else {
+          slide.querySelector('.formula-item').classList.remove('active-item');
+        }
+      });
+    }, 100);
+  }
+  
   window.addEventListener('resize', () => {
     if(window.screen.width < 1024) {
       setInterval(() => {
