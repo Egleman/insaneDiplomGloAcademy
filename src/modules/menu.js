@@ -44,6 +44,7 @@ const menu = () => {
             modalPortfolio.style.visibility = 'hidden';
             modalTransparency.style.visibility = 'hidden';
             popUpConsult.style.visibility = 'hidden';
+            document.querySelector('.popup-thank').style.visibility = 'hidden';
         } else if (e.target.closest('.close-btn-Fullprice-mobile')) {
             popUp.style.visibility = 'hidden';
         }

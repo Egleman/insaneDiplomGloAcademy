@@ -86,20 +86,11 @@ const sendForm = ( { formID } ) => {
                     input.value = '';
                     input.classList.remove('error');
                 });
-                alert('Успешно отправлено');
-                /*
-                statusBlock.textContent = successText;
+                //alert('Успешно отправлено');
+                document.querySelector('.popup-thank').style.visibility = 'visible';
                 setTimeout(() => {
-                    statusBlock.textContent = '';
-                    const headerModal = document.querySelector(`.header-modal`);
-                    const serviceModal = document.querySelector('.services-modal');
-                    const modal = document.querySelector('.overlay');
-                    headerModal.style.display = 'none';
-                    serviceModal.style.display = 'none';
-                    modal.style.display = 'none';
-                    unBlockBody();
+                    document.querySelector('.popup-thank').style.visibility = 'hidden';
                 }, 5000);
-                */
             })
             .catch(err => {
                 console.log(err, 'ошибка');
