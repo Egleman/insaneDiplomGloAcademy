@@ -14,6 +14,7 @@ import transparency from './modules/transparency';
 import consult from './modules/consultation';
 import reviewSlider from './modules/reviewSlider';
 import accordion from './modules/accordion';
+import table from './modules/tablePopUp';
 
 displayNumber();
 menu();
@@ -30,6 +31,7 @@ transparency();
 consult();
 reviewSlider();
 accordion();
+table();
 sendForm({
     formID: 'feedback1',
 });
