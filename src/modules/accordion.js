@@ -3,6 +3,7 @@ const accordion = () => {
     const lists = accordion.querySelectorAll('h2');
     
     accordion.addEventListener('click', (e) => {
+        debugger;
         if (e.target.closest('.title_block')) {
             const tab = e.target.closest('.title_block');
             lists.forEach(list => {
