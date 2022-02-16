@@ -1120,6 +1120,7 @@ template,
 .formula-slider {
   min-height: 400px;
   margin-top: 102px;
+  overflow: hidden;
 }
 
 @media (max-width: 575px) {
@@ -1358,6 +1359,10 @@ template,
 .formula-item-active {
   visibility: visible;
   opacity: 1;
+}
+
+.formula-item-trans div {
+  transform: rotate(180deg);
 }
 
 .formula-item-popup p {
@@ -7502,7 +7507,23 @@ div.wave-block:nth-child(17):after {
   position: relative;
   text-align: left;
 }
-
+.swiper-pagination-current {
+  position: relative;
+  text-align: left;
+}
+.swiper-pagination-current:after {
+  position: absolute;
+  right: 1px;
+  bottom: -2px;
+  content: '';
+  width: 23px;
+  height: 1px;
+  border-radius: 50px;
+  -webkit-transform: rotate(140deg);
+  transform: rotate(140deg);
+  background: -webkit-gradient(linear, left top, left bottom, from(#F48922), to(#FFB015));
+  background: linear-gradient(#F48922 0%, #FFB015 100%);
+}
 .slider-counter-content__current:after {
   position: absolute;
   right: 1px;
@@ -7515,6 +7536,10 @@ div.wave-block:nth-child(17):after {
   transform: rotate(140deg);
   background: -webkit-gradient(linear, left top, left bottom, from(#F48922), to(#FFB015));
   background: linear-gradient(#F48922 0%, #FFB015 100%);
+}
+.swiper-pagination-total {
+  text-align: right;
+  font-weight: 200;
 }
 
 .slider-counter-content__total {
@@ -7683,12 +7708,13 @@ div.wave-block:nth-child(17):after {
   cursor: pointer;
   background: transparent;
   background-size: contain;
+  display: flex;
+  justify-content: center;
 }
 
 .button_o svg {
   position: absolute;
   top: 0;
-  left: 0;
   z-index: -1;
 }
 
@@ -7761,6 +7787,9 @@ div.wave-block:nth-child(17):after {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
+  }
+  .nav-list-repair {
+    flex-wrap: nowrap;
   }
 }
 
@@ -8616,24 +8645,24 @@ strong {
   .mobile-row td:nth-child(2) {
     width: 50%;
     text-align: center;
-    display: none;
+    /*display: none;*/
   }
 
   .mobile-row td:nth-child(3) {
     width: 50%;
     text-align: center;
-    display: none;
+    /*display: none;*/
   }
 
   .mobile-row td:nth-child(4) {
     width: 50%;
     text-align: center;
-    display: none;
+    /*display: none;*/
   }
 
   .mobile-row td:nth-child(5) {
     width: 50%;
-    display: none;
+    /*display: none;*/
   }
 }
 
